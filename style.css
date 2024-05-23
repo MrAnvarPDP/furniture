@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+.bg-img {
+  background-image: url("./backgroun.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.header__menu-item {
+}
+.header__link {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__menu-icon {
+  display: none;
+}
+
+/* section hero */
+.hero {
+  text-align: center;
+}
+.hero__title {
+  font-size: 64px;
+  line-height: 120%;
+  color: #fff;
+  max-width: 888px;
+  margin: 156px auto 30px;
+}
+.hero__text {
+  font-size: 20px;
+  margin: 0 auto 100px;
+  line-height: 150%;
+  color: #fff;
+  max-width: 627px;
+}
+.hero__btn {
+  padding: 16px 80px;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 250px;
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 95px;
+  background-color: #286f6c;
+  padding: 30px 111px;
+  border-radius: 20px 20px 0 0;
+  max-width: 1240px;
+  margin: -150px auto 0;
+}
+.statistic__info {
+}
+.statistic__num {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.statistic__text {
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.line {
+  height: 100px;
+  min-width: 2px;
+  background-color: #fff;
+}
+
+/* offer section */
+.offer {
+  margin: 100px 0;
+}
+
+.offer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.offer__img {
+  width: 554px;
+  height: 443px;
+  background-image: url("./lui-peng-8NxTrV6i4WQ-unsplash\ 1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offer__title {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 600;
+  max-width: 508px;
+  margin-bottom: 14px;
+}
+.offer__text {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.offer__service {
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.offer__service::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url("./ticked.svg");
+  background-repeat: no-repeat;
+  left: 10px;
+}
+
+.service__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.service__text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    gap: 25px;
+  }
+
+  .statistic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 40px 48px;
+    gap: 45px;
+    border-radius: 20px;
+  }
+
+  .statistic__num {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .statistic__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .line {
+    display: block;
+    width: 2px;
+    margin-left: 100px;
+  }
+
+  .line-none {
+    display: none;
+  }
+
+  .offer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .offer__title {
+    margin: 0 auto 14px;
+  }
+
+  .offer__text {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .header__menu-icon {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero__btn {
+    padding: 9px 35px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .statistic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 40px 48px;
+    gap: 45px;
+    border-radius: 20px;
+  }
+
+  .statistic__num {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .statistic__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .line {
+    display: block;
+    width: 2px;
+    margin-left: 42px;
+  }
+
+  .line-none {
+    display: none;
+  }
+}
